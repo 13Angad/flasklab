@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fish Species Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fish Species Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="weight">Weight (g):</label>
+            <input type="text" id="weight" name="weight">
+            
+            <label for="length1">Vertical Length (cm):</label>
+            <input type="text" id="length1" name="length1">
+            
+            <label for="length2">Diagonal Length (cm):</label>
+            <input type="text" id="length2" name="length2">
+            
+            <label for="length3">Cross Length (cm):</label>
+            <input type="text" id="length3" name="length3">
+            
+            <label for="height">Height (cm):</label>
+            <input type="text" id="height" name="height">
+            
+            <label for="width">Width (cm):</label>
+            <input type="text" id="width" name="width">
+            
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
